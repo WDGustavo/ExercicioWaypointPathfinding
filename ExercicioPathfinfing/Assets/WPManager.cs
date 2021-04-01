@@ -49,7 +49,7 @@ public class WPManager : MonoBehaviour
 
     void Update()
     {
-        //Mostra as linhas do Link
+        //Mostra as linhas formadas pelos Links
         graph.debugDraw(); 
     }
 }
