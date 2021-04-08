@@ -50,6 +50,15 @@ public class Followpath : MonoBehaviour
         currentWP = 0;
     }
 
+    //Função para levar uma posição especifica no caso a industria
+    public void GoToIndustria()
+    {
+        //Seta o local da lista que o tanque deve parar
+        g.AStar(currentNode, wps[10]);
+        //Ao chegar no ponto a lista volta para 0
+        currentWP = 0;
+    }
+
     void LateUpdate()
     {
         //Se a posição do waypoint for 0 fique parado
